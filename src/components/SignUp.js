@@ -69,12 +69,9 @@ export default function SignUp() {
         <div>
             <Header />
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
-                <div className="p-4 min-w-full max-w-4xl" style={{ backgroundColor: '#F5F4F9' }}>
-                    {/* <h2 className="flex justify-center -mb-8 text-xl font-bold">Registration</h2> */}
+                <div className="p-4 min-w-full max-w-4xl" style={{ backgroundColor: '#F5F4F9' }}>                    
                     <div class="min-h-screen flex flex-row items-center justify-center bg-gray-100">
-                        {/* <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-20 border-2 w-50 max-w-md">
-                            <img src={Robot} alt="robot" />
-                        </div> */}
+                       
                         <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-6 w-50 max-w-md">
                             <div class="font-medium self-center text-xl sm:text-3xl text-gray-900">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90" viewBox="0 0 172 172"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#013fe2"><path d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"></path></g></g></svg>
@@ -85,18 +82,14 @@ export default function SignUp() {
                                     <div class="flex flex-col mb-2">
                                         <label for="email" class="mb-1 text-lg tracking-wide text-gray-900">E-Mail Address:</label>
                                         <div class="relative">
-                                            {/* <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
-                                                <i class="fas fa-at text-blue-500"></i>
-                                            </div> */}
+                                           
                                             <input id="email" type="email" name="email" value={email} onChange={handleEmailChange} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"/>
                                         </div>
                                     </div>
                                     <div class="flex flex-col mb-2">
                                         <label for="phone" class="mb-1 text-lg tracking-wide text-gray-900">Username:</label>
                                         <div class="relative">
-                                            {/* <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
-                                                <i class="fas fa-phone text-blue-500"></i>
-                                            </div> */}
+                                           
                                             <input id="phone" type="text" name="username" value={username} onChange={handleUsernameChange} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"/>
                                         </div>
                                     </div>
@@ -104,9 +97,7 @@ export default function SignUp() {
                                         <label for="password" class="mb-1 text-lg tracking-wide text-gray-900">Password:</label>
                                         <div class="relative">
                                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
-                                                {/* <span>
-                                                    <i class="fas fa-lock text-blue-500"></i>
-                                                </span> */}
+                                               
                                             </div>
                                             <input id="password" type="password" name="password" value={password} onChange={handlePasswordChange} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 "/>
                                         </div>
@@ -115,9 +106,7 @@ export default function SignUp() {
                                         <label for="password" class="mb-1 text-lg tracking-wide text-gray-900">Retype-Password:</label>
                                         <div class="relative">
                                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
-                                                {/* <span>
-                                                    <i class="fas fa-lock text-blue-500"></i>
-                                                </span> */}
+                                               
                                             </div>
                                             <input id="password" type="password" name="password" value={password2} onChange={handlePassword2Change} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 "/>
                                         </div>

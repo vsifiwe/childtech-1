@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
-import Robot from '../assets/robotone.PNG'
 import { Link, useNavigate } from 'react-router-dom'
+
 
 function Login() {
 
@@ -31,18 +31,23 @@ function Login() {
         .then(response => {
             
             console.log(response)
-            if(response.status == 200) {
-                navigate("/coursepage")
+            if(response.status === 200) {
+
+                window.localStorage.setItem("token", response.data.access)
+
+                navigate("/coursepagepaid")
             } else {
                 console.log("Entered data is incorrect")
             }
         })
         .catch((error) => {
-            console.log("You entered wrong data")
+            alert("You entered wrong data")
         })
          
         
     }
+
+
 
     return (
         <div>
@@ -57,7 +62,7 @@ function Login() {
                             <div class="mt-10">
                                 <form onSubmit={handleSubmit}>
                                     <div class="flex flex-col mb-5">
-                                        <label for="email" class="mb-1 text-lg tracking-wide text-gray-900">E-Mail Address: </label>
+                                        <label for="email" class="mb-1 text-lg tracking-wide text-gray-900">Username: </label>
                                         <div class="relative">
                                             
                                             <input id="email" type="text" name="username" value={username} onChange={handleUsernameChange} class="text-lg pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-500"/>

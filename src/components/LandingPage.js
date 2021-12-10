@@ -29,11 +29,11 @@ function LandingPage() {
                             </p>
 
                             <div className="flex space-x-12 ml-48 pb-32">
-                                <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg mr-16 p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/login'> Start now </Link> </Button> </span>
+                                <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg mr-16 p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
                                 <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 font-semibold leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
-                        <div className="flex -mr-6 -mt-12 -mb-20">
+                        <div className="flex -mr-6 -mt-8 -mb-20">
                             <img src={show} alt="home" />
                         </div>
                     </div>
@@ -57,23 +57,10 @@ function LandingPage() {
 
                             </div>
                         </div>
-                        <div
-                            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-                            style={{ height: "70px" }}
-                        >
-                            <svg
-                                className="absolute bottom-0 overflow-hidden bg-blue-400"
-                                xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="none"
-                                version="1.1"
-                                viewBox="0 0 2560 100"
-                                x="0"
-                                y="0"
-                            >
-                                <polygon
-                                    className="text-blue-400 fill-current"
-                                    points="2560 0 2560 100 0 100"
-                                ></polygon>
+                        <div className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style={{ height: "70px" }} >
+                            <svg className="absolute bottom-0 overflow-hidden bg-blue-400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                                <polygon className="text-blue-400 fill-current"
+                                    points="2560 0 2560 100 0 100"></polygon>
                             </svg>
                         </div>
                     </div>
@@ -171,7 +158,6 @@ function LandingPage() {
                                             className="w-full align-middle rounded-t-lg"/>                                      
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </section>

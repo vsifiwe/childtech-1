@@ -3,14 +3,19 @@ import { img } from 'react-bootstrap'
 import Footer from './layout/Footer'
 import Header from './layout/Header'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
-const token = window.localStorage.getItem("token")
-
+const token = localStorage.getItem("token")
+console.log(token)
+const token1 = `Bearer ${token}`
 const config = {
-    token
+    headers: {
+        Authorization: token1,
+    }
 }
 
 function CoursePage() {
+    const navigate = useNavigate();
 
     const [courses, setCourses] = useState([])
     const [isLoading,setIsloading] = useState(true);
@@ -19,12 +24,20 @@ function CoursePage() {
         console.log("starting")
         axios.get('http://childtech.herokuapp.com/api/courses/', config)
         .then(response =>{ 
-            console.log(response.data)
+            console.log(response)
             setIsloading(false)
-            setCourses(response.data)})
-    
-    // empty dependency array means this effect will only run once (like componentDidMount in classes)
-    }, []);
+            setCourses(response.data)
+        })
+            .catch((error) => {
+                if(error){
+                    // navigate("/login")
+                    console.log(error)
+                } else {
+                    navigate("/coursepagepaid")
+                }
+            })
+        },[])
+
     return (
         <div>
             <Header />
@@ -49,16 +62,16 @@ function CoursePage() {
                             {  
                                 courses.map((course, key) => {
                                      return isLoading=== true  ? <div>Loading..</div>:  (<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-                                <div class="object-center object-cover h-auto w-full">                                   
-                                    <img width='560' height='315' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAACtCAMAAAAu7/J6AAAAM1BMVEW4uLj///+7u7u0tLTv7+/S0tLExMTq6urHx8fs7Ozm5ubGxsbKysrCwsLk5OT8/Pz19fUGOsqZAAADxElEQVR4nO3d23arIBRGYYXUY0z6/k9bMWLUgC4MSln883rvDv1GDqAEswwhhBBCCCGEEEIIIYQQQgghhBBCCCGEENLJtpWhj+G/V5R5Xhahj+JfVzT5UAMmS6IdiQamVoQ+nn+YKB75okcBplVFk3+EN90iExGYFtmIwDSlvvS3woBAtvU2kapOenhJIkqbSVZEooGpSpLJhejFFPqIL+++83FtqryHPupLqw4QDUzJvJoWczTX0pjTia2hI4mJ/5yu+5JoYOpCn8Wp+SBiztQd/Lg2VfJk2pujOTPxm9NRJyAu1W3os/Ka6+iazMRn3HQWESOm+4lEA1P8k5UjczTX4p7TiSuIXkzRjsKvInoxhT7bQx2d6R9miu8j/GqiCJlCEMXF5HTt2neRXAu/38IRqW4xvJrOHjzuK0UxHAj5dosGKZNtyLdcJEg9UxGOKRokxXTxm67u4kO6mKkupIwRSTFdNcEt+tFRpEjZ9gItX40LveJFyrJv7teSiPSV7piRFNPzLKFn874ZEDdSP7w8h+nZzKcgsSOdwrQk4oDk//LJx2URDkh+mQxXjngg+buPa7x3ywXJz/ByGDoa/jYDJDEe+7dMeqGEWFswQBI/t2o8+m9WKemVSaK6/awwWCD1LwL9UXKUaVq81fYvR6ZIs0VF3WPDwtJDE73esWyRvmBaEbFGmn1/uzBNRO9RBGukN5OgMj268cTnAy3mSLObY5TrTdMPA6vFhXP2SDOmdu9HgfrdWa3uLSSA1J+MXi2zxTQRfd4YTgLpzSRtTKX+MaDp3nkiSDMm02RlmqOZlxckg6TWhb7OSa4/wpuRSNgWFySE9GZaTFamOZp9/UVSSLMFj3rcNA0dt5ZdJoa0YiIRJYg0W7Ne6KHj3kKnBJHUN93sgqPcXzCXJNKMiUCULFKe/yomef+l/NtkkRQTjShpJHpAAhKQLAGJEJAIAYkQkAgBiRCQCAGJEJAIAYkQkAgBiRCQCAGJlN/fdX1uxMUCyeembqYt3Zgg+WIy73rHBskHk21jQEZImdhbtbVDZN3XlROSWqh+mKms7AK8kLKje3Vsb9/GDukI094OdwyRXLc02d8rkSWSy0ZLlG2ReCKRHzdBe9gEVyQSE/V5HHyRsr05HX2zZNZIW7+dcHmUEnMkG5Pb06bYI5mer+D6xAT+SB9P6nB/9kYKSIupr30aay8NpEz/YKk8tK99Mkhqj7PavDfC/n/Nn0M1e6T+XA/vyyrHfB4NQgghhBBCCCGEEEIIIYQQQgghhBBCCKHQ/QHULDF6a+yYzgAAAABJRU5ErkJggg=='/>
+                                <div class="object-center object-cover h-auto w-full">                                    
+                                    <img width='560' height='315' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAACtCAMAAAAu7/J6AAAAM1BMVEW4uLj///+7u7u0tLTv7+/S0tLExMTq6urHx8fs7Ozm5ubGxsbKysrCwsLk5OT8/Pz19fUGOsqZAAADxElEQVR4nO3d23arIBRGYYXUY0z6/k9bMWLUgC4MSln883rvDv1GDqAEswwhhBBCCCGEEEIIIYQQQgghhBBCCCGEENLJtpWhj+G/V5R5Xhahj+JfVzT5UAMmS6IdiQamVoQ+nn+YKB75okcBplVFk3+EN90iExGYFtmIwDSlvvS3woBAtvU2kapOenhJIkqbSVZEooGpSpLJhejFFPqIL+++83FtqryHPupLqw4QDUzJvJoWczTX0pjTia2hI4mJ/5yu+5JoYOpCn8Wp+SBiztQd/Lg2VfJk2pujOTPxm9NRJyAu1W3os/Ka6+iazMRn3HQWESOm+4lEA1P8k5UjczTX4p7TiSuIXkzRjsKvInoxhT7bQx2d6R9miu8j/GqiCJlCEMXF5HTt2neRXAu/38IRqW4xvJrOHjzuK0UxHAj5dosGKZNtyLdcJEg9UxGOKRokxXTxm67u4kO6mKkupIwRSTFdNcEt+tFRpEjZ9gItX40LveJFyrJv7teSiPSV7piRFNPzLKFn874ZEDdSP7w8h+nZzKcgsSOdwrQk4oDk//LJx2URDkh+mQxXjngg+buPa7x3ywXJz/ByGDoa/jYDJDEe+7dMeqGEWFswQBI/t2o8+m9WKemVSaK6/awwWCD1LwL9UXKUaVq81fYvR6ZIs0VF3WPDwtJDE73esWyRvmBaEbFGmn1/uzBNRO9RBGukN5OgMj268cTnAy3mSLObY5TrTdMPA6vFhXP2SDOmdu9HgfrdWa3uLSSA1J+MXi2zxTQRfd4YTgLpzSRtTKX+MaDp3nkiSDMm02RlmqOZlxckg6TWhb7OSa4/wpuRSNgWFySE9GZaTFamOZp9/UVSSLMFj3rcNA0dt5ZdJoa0YiIRJYg0W7Ne6KHj3kKnBJHUN93sgqPcXzCXJNKMiUCULFKe/yomef+l/NtkkRQTjShpJHpAAhKQLAGJEJAIAYkQkAgBiRCQCAGJEJAIAYkQkAgBiRCQCAGJlN/fdX1uxMUCyeembqYt3Zgg+WIy73rHBskHk21jQEZImdhbtbVDZN3XlROSWqh+mKms7AK8kLKje3Vsb9/GDukI094OdwyRXLc02d8rkSWSy0ZLlG2ReCKRHzdBe9gEVyQSE/V5HHyRsr05HX2zZNZIW7+dcHmUEnMkG5Pb06bYI5mer+D6xAT+SB9P6nB/9kYKSIupr30aay8NpEz/YKk8tK99Mkhqj7PavDfC/n/Nn0M1e6T+XA/vyyrHfB4NQgghhBBCCCGEEEIIIYQQQgghhBBCCKHQ/QHULDF6a+yYzgAAAABJRU5ErkJggg==' alt=" "/>
                                 </div>
                                 <div class="text-center py-8 sm:py-6">
                                     <p class="text-xl text-gray-700 font-bold">{course.name}</p>
-                                    <h3 class="text-blue-600 text-3xl" id="whoobe-upam2">
+                                    {/* <h3 class="text-blue-600 text-3xl" id="whoobe-upam2">
                                         <small>RWF </small>
                                         <b>{course.price}</b>
-                                    </h3>
-                                    <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">Buy now</button>
+                                    </h3> */}
+                                    <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">Click to view</button>
                                 </div>
                             </div>)
                                 })
@@ -66,8 +79,8 @@ function CoursePage() {
                             
                         </div>
                     </section>
-                    {/* <!-- Pricing section --> */}
-                    <section class="w-full pt-16 pb-20">
+                    
+                    {/* <section class="w-full pt-16 pb-20">
                         <div class="px-10 mx-auto text-center max-w-7xl">
                             <h2 class="text-5xl font-bold text-blue-600">
                                 Unlimited <span class="text-gray-800">Access</span>
@@ -75,7 +88,7 @@ function CoursePage() {
                             <p class="mt-3 text-lg text-gray-500">Our Unlimited access are designed to meet the needs of everybody.</p>
                             <div class="grid gap-5 mt-12 lg:grid-cols-3 md:grid-cols-2">
 
-                                {/* <!-- Start First Plan --> */}
+                                
                                 <div class="relative flex flex-col justify-between p-8 lg:p-6 xl:p-8 rounded-2xl">
 
                                     <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-blue-50 rounded"></div>
@@ -115,9 +128,7 @@ function CoursePage() {
                                     </a>
 
                                 </div>
-                                {/* <!-- End First Plan --> */}
-
-                                {/* <!-- Start Middle Plan --> */}
+                                
                                 <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl">
 
                                     <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-blue-50 rounded-xl"></div>
@@ -161,9 +172,7 @@ function CoursePage() {
                                     </a>
 
                                 </div>
-                                {/* <!-- End Middle Plan --> */}
-
-                                {/* <!-- Start Third Plan --> */}
+                                
                                 <div class="relative flex flex-col justify-between p-8 lg:p-6 xl:p-8 rounded-2xl md:col-span-2 lg:col-span-1">
 
                                     <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-blue-50 rounded-xl"></div>
@@ -203,11 +212,11 @@ function CoursePage() {
                                     </a>
 
                                 </div>
-                                {/* <!-- End Third Plan --> */}
+                               
 
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </div>
             </div>
 

@@ -40,15 +40,18 @@ function Booking() {
                                                 <Form.Control type="text" />
                                             </Form.Group>
                                         </Row>
-                                        <Row className="mb-3">
+                                        <Row className="mb-3">                                        
                                             <Form.Group as={Col} controlId="formGridEmail">
                                                 <Form.Label>Email Address</Form.Label>
                                                 <Form.Control type="email" />
                                             </Form.Group>
-
                                             <Form.Group as={Col} controlId="formGridPhone">
                                                 <Form.Label>Telephone</Form.Label>
                                                 <Form.Control type="number" />
+                                            </Form.Group>
+                                            <Form.Group as={Col} controlId="formGridEmail">
+                                                <Form.Label>Child's name</Form.Label>
+                                                <Form.Control type="text" />
                                             </Form.Group>
                                         </Row>
                                         <Row className="mb-3">
@@ -72,11 +75,6 @@ function Booking() {
                                             </Form.Group>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Group as={Col} controlId="formGridEmail">
-                                                <Form.Label>Child's name</Form.Label>
-                                                <Form.Control type="text" />
-                                            </Form.Group>
-
                                             <Form.Group as={Col} controlId="formGridState">
                                                 <Form.Group as={Col} controlId="formGridPhone">
                                                     <Form.Label>Child's Birth Date</Form.Label>
@@ -104,7 +102,7 @@ function Booking() {
                                     <Form className="mr-6">
                                         <Row className="mb-3">
                                             <Form.Group as={Col} controlId="formGridEmail">
-                                                <Form.Label>Headmaster/Mastress name</Form.Label>
+                                                <Form.Label>Headmaster/Mistress name</Form.Label>
                                                 <Form.Control type="text" />
                                             </Form.Group>
 
