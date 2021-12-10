@@ -16,13 +16,13 @@ function LandingPage() {
                     <div className="flex flex-row sm:flex-col md:flex-col">
                         <div className="flex flex-col text-black space-y-24">
                             <span className="text-4xl ml-8 font-bold mt-16">Our Children, Our future</span>
-                            <p className="flex text-xl ml-8 leading-relaxed py-4 font-semibold">
+                            <p className="flex text-xl ml-8 leading-relaxed py-4">
                                 Ever thought of improving your children’s eductaion?
                                 childTech teaches your child to love technology,
                                 improve creativity, logical thinking and problem solving
                                 all at a young age.
                             </p>
-                            <p className="text-xl ml-8 leading-relaxed mt-0 font-semibold">
+                            <p className="text-xl ml-8 leading-relaxed mt-0">
                                 This program will be having children from 7 years to 14 years, through ChildTech,
                                 children will be able to improve their computation skills, problem solving skills,
                                 sharpen their minds and increase their level of observation thus being creative.
@@ -30,7 +30,7 @@ function LandingPage() {
 
                             <div className="flex space-x-12 ml-48 pb-32">
                                 <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg mr-16 p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
-                                <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 font-semibold leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
+                                <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
                         <div className="flex -mr-6 -mt-8 -mb-20">
@@ -49,7 +49,7 @@ function LandingPage() {
                             <div className="items-center flex flex-wrap">
                                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                                     <div className="pr-12">
-                                        <h1 className="text-white font-semibold text-3xl">
+                                        <h1 className="text-white text-3xl">
                                             ChildTech is a STEM program that is going to teach children about technology.
                                         </h1>
                                     </div>
@@ -74,8 +74,8 @@ function LandingPage() {
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
                                                 <i className="fas fa-award"></i>
                                             </div>
-                                            <h6 className="text-xl font-semibold">School program</h6>
-                                            <p className="mt-2 mb-4 text-gray-600">
+                                            <h6 className="text-xl font-bold">School program</h6>
+                                            <p className="mt-2 mb-4 text-gray-900">
                                                 Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.
                                             </p>
                                         </div>
@@ -88,10 +88,10 @@ function LandingPage() {
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
                                                 <i className="fas fa-retweet"></i>
                                             </div>
-                                            <h6 className="text-xl font-semibold">
+                                            <h6 className="text-xl font-bold">
                                                  Weekend program
                                             </h6>
-                                            <p className="mt-2 mb-4 text-gray-600">
+                                            <p className="mt-2 mb-4 text-gray-900">
                                                 Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
                                             </p>
                                         </div>
@@ -103,10 +103,10 @@ function LandingPage() {
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
                                                 <i className="fas fa-retweet"></i>
                                             </div>
-                                            <h6 className="text-xl font-semibold">
+                                            <h6 className="text-xl font-bold">
                                                  Online program
                                             </h6>
-                                            <p className="mt-2 mb-4 text-gray-600">
+                                            <p className="mt-2 mb-4 text-gray-900">
                                                 Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
                                             </p>
                                         </div>
@@ -119,10 +119,10 @@ function LandingPage() {
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
                                                 <i className="fas fa-fingerprint"></i>
                                             </div>
-                                            <h6 className="text-xl font-semibold">
+                                            <h6 className="text-xl font-bold">
                                             Holiday program
                                             </h6>
-                                            <p className="mt-2 mb-4 text-gray-600">
+                                            <p className="mt-2 mb-4 text-gray-900">
                                                 Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!
                                             </p>
                                         </div>
@@ -139,11 +139,11 @@ function LandingPage() {
                                     <h3 className="text-3xl mb-2 font-bold leading-normal">
                                         Working with ChildTech is a pleasure
                                     </h3>
-                                    <p className="text-lg font-bold leading-relaxed mt-4 mb-4 text-gray-900">
+                                    <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-900">
                                         ChildTech is looking forward to getting children on their best level of technology
                                         and that is going to change the education system to a better one.
                                     </p>
-                                    <p className="text-lg font-bold leading-relaxed mt-0 mb-4 text-gray-900">
+                                    <p className="text-lg leading-relaxed mt-0 mb-4 text-gray-900">
                                     ChildTech will be having several courses including the coding part, 
                                     the practical science part and the engineering part, through different 
                                     programs: school program, afterschool program, weekend program and holiday program.
@@ -155,7 +155,7 @@ function LandingPage() {
                                         <img
                                             alt="..."
                                             src={learn}
-                                            className="w-full align-middle rounded-t-lg"/>                                      
+                                            className="w-full align-middle rounded-t-lg"/>                                     
                                     </div>
                                 </div>
                             </div>
@@ -196,10 +196,10 @@ function LandingPage() {
                                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-400">
                                             <i className="fas fa-rocket text-xl"></i>
                                         </div>
-                                        <h3 className="text-3xl font-semibold">
+                                        <h3 className="text-3xl font-bold">
                                             ChildTech main actions
                                         </h3>
-                                        <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                                        <p className="mt-4 text-lg leading-relaxed text-gray-900 text-lg">
                                         In school children will first be taught how to code in their schools. 
                                         And create their own interactive stories, animations and games.
                                         </p>
@@ -207,12 +207,12 @@ function LandingPage() {
                                             <li className="py-2">
                                                 <div className="flex items-center">
                                                     <div>
-                                                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-blue-400 mr-3">
+                                                        <span className="text-xs inline-block py-1 px-2 rounded-full text-white bg-blue-400 mr-3">
                                                             <i className="fas fa-fingerprint"></i>
                                                         </span>
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-gray-600">
+                                                        <h4 className="text-gray-900 text-lg">
                                                             Teach children programming
                                                         </h4>
                                                     </div>
@@ -221,24 +221,24 @@ function LandingPage() {
                                             <li className="py-2">
                                                 <div className="flex items-center">
                                                     <div>
-                                                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-blue-400 mr-3">
+                                                        <span className="text-xs inline-block py-1 px-2 rounded-full text-white bg-blue-400 mr-3">
                                                             <i className="fab fa-html5"></i>
                                                         </span>
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-gray-600">Engineering/Robotics</h4>
+                                                        <h4 className="text-gray-900 text-lg">Engineering/Robotics</h4>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li className="py-2">
                                                 <div className="flex items-center">
                                                     <div>
-                                                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-blue-400 mr-3">
+                                                        <span className="text-xs inline-block py-1 px-2 rounded-full text-white bg-blue-400 mr-3">
                                                             <i className="far fa-paper-plane"></i>
                                                         </span>
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-gray-600">Practical physics</h4>
+                                                        <h4 className="text-gray-900 text-lg">Practical physics</h4>
                                                     </div>
                                                 </div>
                                             </li>

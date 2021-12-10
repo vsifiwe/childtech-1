@@ -12,51 +12,44 @@ function About() {
                     <h1 className="flex justify-center text-xl font-bold ">About ChildTech</h1>
 
                     <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12 pt-96 ">
-                        <div class="bg-blue-400 w-full shadow rounded p-8 sm:p-12 -mt-72">
+                        <div class="bg-blue-400 w-full justify-center shadow rounded p-8 sm:p-12 -mt-72">
 
-<h1>ChildTech</h1>
-<p></p>
+                            <h1 className='text-center text-white font-semibold text-3xl p-8'>ChildTech</h1>
+                            <ul>
+                                <li class="flex items-center space-x-2">
+                                    <span> <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> </span>
+                                    <span className='p-2 text-lg text-white'>ChildTech is a STEM program that is going to teach children about technology.</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span> <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> </span>
+                                    <span className='p-2 text-lg text-white'>This program will be having children from 7 years to 14 years, through ChildTech,
+                                        children will be able to improve their computation skills, problem solving skills,
+                                        sharpen their minds and increase their level of observation thus being creative.</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span>   <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg> </span>
+                                    <span className='p-2 text-lg text-white'>ChildTech will be having several courses including the coding part,
+                                        the practical science part and the engineering part, through different
+                                        programs</span>
+                                </li>
+                            </ul>
+                            <div class="flex flex-col space-y-6">
+                                <div class="inline-flex space-x-2 items-center">
+                                    <ion-icon name="call" class="text-white text-xl"></ion-icon>
+                                    <span>+(250) 783 579 339</span>
+                                </div>
+                                <div class="inline-flex space-x-2 items-center">
+                                    <ion-icon name="mail" class="text-white text-xl"></ion-icon>
+                                    <span>bdidiye1@gmail.com</span>
+                                </div>
+                                <div class="inline-flex space-x-2 items-center">
+                                    <ion-icon name="pin" class="text-teal-300 text-xl"></ion-icon>
+                                    <span>Kigali city, Gasabo, street KG 281 St</span>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
-                    {/* <div class="min-h-screen flex flex-row items-center justify-center bg-gray-100">
-                        <div class="flex flex-col bg-gray-100 shadow-md sm:px-6 md:px-8 lg:px-10 border-2 max-w-md">
-                            <h2 className="flex justify-center text-xl font-bold -pt-8">Location</h2>
-                            <div>
-                                <iframe className="rounded rounded-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d893.029056620538!2d30.093349203704836!3d-1.9623039421907786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a557abbdf820e7e!2sCreativity%20Lab!5e1!3m2!1sen!2srw!4v1638434989225!5m2!1sen!2srw" width="500" height="540" loading="lazy"></iframe>
-                            </div>
-                        </div>
-                        <div class="flex flex-col bg-blue-100 shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-6 w-50 ml-32 max-w-md ">
-                            <h2 className="flex justify-center text-xl font-bold">About Us</h2>
-                            <ul class="py-12 space-y-3">
-                                <li class="flex items-center space-x-2 text-lg font-medium">
-                                    <span>we are entreprenueurs tech, we passionated
-                                        in helping children to be educated through
-                                        technology.</span>
-                                </li>
-                                <li class="flex space-x-2 text-lg font-medium">
-                                    <span>we provide information technology training
-                                        for children from 7 to 15 years old.</span>
-                                </li>
-                                <li class="space-x-2 text-xl text-center font-bold">
-                                    <span> Contact us</span>
-                                </li>
-                                <li class="flex  space-x-2 text-lg font-medium">
-                                    <span>Telephone: +250785262657</span>
-                                </li>
-                                <li class="flex  space-x-2 text-lg font-medium">
-                                    <span>Email: igiginixy10@gmail.com</span>
-                                </li>
-                                <li class="space-x-2 text-xl text-center font-bold">
-                                    <span> Address:</span>
-                                </li>
-                                <li class="flex space-x-2 text-lg font-medium">
-                                    <span>Kigali city, Gasabo District, Kimihurura-Rugando</span>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div> */}
 
                     {/*Start  Contact US */}
 
@@ -98,6 +91,7 @@ function About() {
 
                     {/* End Contact us */}
                 </div>
+                <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
             </div>
             <Footer />
         </div>

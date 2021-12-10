@@ -80,17 +80,17 @@ export default function SignUp() {
                             <div class="mt-10">
                                 <form onSubmit={handleSubmit}>
                                     <div class="flex flex-col mb-2">
-                                        <label for="email" class="mb-1 text-lg tracking-wide text-gray-900">E-Mail Address:</label>
+                                        <label for="email" class="mb-1 text-lg tracking-wide text-gray-900">E-mail address:</label>
                                         <div class="relative">
                                            
-                                            <input id="email" type="email" name="email" value={email} onChange={handleEmailChange} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"/>
+                                            <input id="email" type="email" name="email" value={email} onChange={handleEmailChange} class="text-sm pl-10 pr-4 rounded-md border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"/>
                                         </div>
                                     </div>
                                     <div class="flex flex-col mb-2">
                                         <label for="phone" class="mb-1 text-lg tracking-wide text-gray-900">Username:</label>
                                         <div class="relative">
                                            
-                                            <input id="phone" type="text" name="username" value={username} onChange={handleUsernameChange} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"/>
+                                            <input id="phone" type="text" name="username" value={username} onChange={handleUsernameChange} class="text-sm pl-10 pr-4 rounded-md border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"/>
                                         </div>
                                     </div>
                                     <div class="flex flex-col mb-6">
@@ -99,22 +99,22 @@ export default function SignUp() {
                                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                                
                                             </div>
-                                            <input id="password" type="password" name="password" value={password} onChange={handlePasswordChange} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 "/>
+                                            <input id="password" type="password" name="password" value={password} onChange={handlePasswordChange} class="text-sm pl-10 pr-4 rounded-md border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 "/>
                                         </div>
                                     </div>
                                     <div class="flex flex-col mb-6">
-                                        <label for="password" class="mb-1 text-lg tracking-wide text-gray-900">Retype-Password:</label>
+                                        <label for="password" class="mb-1 text-lg tracking-wide text-gray-900">Retype-password:</label>
                                         <div class="relative">
                                             <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
                                                
                                             </div>
-                                            <input id="password" type="password" name="password" value={password2} onChange={handlePassword2Change} class="text-sm pl-10 pr-4 rounded-2xl border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 "/>
+                                            <input id="password" type="password" name="password" value={password2} onChange={handlePassword2Change} class="text-sm pl-10 pr-4 rounded-md border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400 "/>
                                         </div>
                                     </div>
 
                                     <div class="flex w-full">
-                                        <button type="submit" class="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-2xl py-2 w-full transition duration-150 ease-in">
-                                            <span class="mr-2 uppercase">Register                                                                                     
+                                        <button type="submit" class="flex mt-2 items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-600 rounded-md py-2 w-full transition duration-150 ease-in">
+                                            <span class="mr-2">Register                                                                                     
                                             </span>
 
                                             <span>

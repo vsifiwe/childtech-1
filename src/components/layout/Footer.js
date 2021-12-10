@@ -8,7 +8,7 @@ function Footer() {
                     <div class="flex flex-col items-center">
                         <div class="sm:w-2/3 text-center py-4">
                             <p class="text-sm text-white text-xl mb-2">
-                               copyright © 2021 by ChildTech
+                               Copyright © 2021 by ChildTech
                             </p>
                         </div>
                     </div>
