@@ -17,7 +17,7 @@ function Services() {
                                 to understand well technology and grow with better practice.
                             </h1>
                             <div className="flex flex-wrap">
-                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center">
+                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center transform transition cursor-none hover:-translate-y-6">
                                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                         <div className="px-4 py-2 flex-auto">
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
@@ -31,7 +31,7 @@ function Services() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center">
+                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center transform transition cursor-none hover:-translate-x-6">
                                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                         <div className="px-4 py-2 flex-auto">                                            
                                             <h6 className="text-xl font-semibold p-4">
@@ -42,7 +42,7 @@ function Services() {
                                     </div>
                                 </div>
 
-                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center">
+                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center transform transition cursor-none hover:-translate-x-6">
                                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                         <div className="px-4 py-2 flex-auto">                                            
                                             <h6 className="text-xl font-semibold p-4">
@@ -53,7 +53,7 @@ function Services() {
                                     </div>
                                 </div>
 
-                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center">
+                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center transform transition cursor-none hover:-translate-y-6">
                                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                         <div className="px-4 py-2 flex-auto">
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
@@ -62,7 +62,7 @@ function Services() {
                                             <h6 className="text-xl font-semibold p-4">
                                                 Engineering/Robotics
                                             </h6>
-                                            <p className="mt-2 mb-4 text-gray-600 pb-3">
+                                            <p className="mt-2 text-gray-600 pb-3">
                                                 We teach children to deal with the engineering part this allowing them
                                                 to build different components including robots, to increase their creativity level,
                                                 problem solving  and decision making skills.
@@ -87,7 +87,7 @@ function Services() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center">
+                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center transform transition cursor-none hover:-translate-x-6">
                                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                         <div className="px-4 py-2 flex-auto">                                            
                                             <h6 className="text-xl font-semibold">
@@ -102,7 +102,7 @@ function Services() {
                     </div>
 
 
-                    <div class="min-h-screen flex flex-row items-center justify-center bg-gray-100">                    
+                    <div class="min-h-screen flex flex-row items-center justify-center bg-gray-100 transform transition cursor-none hover:-translate-y-6">                    
                         <div class="bg-blue-400 w-full shadow rounded p-8 sm:p-12 max-w-5xl mx-auto mb-8 mt-36 ">
                             <h1 className='text-center text-white text-2xl font-semibold'>Our different programs is devided into 4 categories.
                             </h1>

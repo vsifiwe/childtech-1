@@ -11,7 +11,7 @@ function About() {
                 <div className="p-4 min-w-full max-w-4xl" style={{ backgroundColor: '#F5F4F9' }}>
                     <h1 className="flex justify-center text-xl font-bold ">About ChildTech</h1>
 
-                    <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12 pt-96 ">
+                    <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12 pt-96 transform transition cursor-none hover:-translate-y-12 ">
                         <div class="bg-blue-400 w-full justify-center shadow rounded p-8 sm:p-12 -mt-72">
 
                             <h1 className='text-center text-white font-semibold text-3xl p-8'>About ChildTech</h1>
@@ -52,7 +52,7 @@ function About() {
 
                     {/*Start  Contact US */}
 
-                    <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12 pt-96 ">
+                    <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12 pt-96 transform transition cursor-none hover:-translate-y-12 ">
                         <div class="bg-gray-200 w-full shadow rounded p-8 sm:p-12 -mt-72">
                             <p class="text-2xl font-bold leading-7 text-center text-blue-500">Let's get in touch</p>
                             <form action="" method="post">
@@ -63,7 +63,7 @@ function About() {
                                     </div>
                                     <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0">
                                         <label class="font-semibold leading-none text-blue-500">Phone</label>
-                                        <input type="text" class="leading-none text-gray-900 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-white rounded" />
+                                        <input type="number" class="leading-none text-gray-900 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-white rounded" />
                                     </div>
                                 </div>
                                 <div class="md:flex items-center mt-8">

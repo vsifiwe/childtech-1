@@ -2,66 +2,124 @@ import React from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 import { Link } from 'react-router-dom'
-import eventimage from '../assets/online.png'
-import eventimag from '../assets/classroom.png'
+
+import eventimag from '../assets/online.png'
 
 function Events() {
     return (
         <div>
             <Header />
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
-                <div className="p-4 min-w-full max-w-4xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
+                <div className="p-4 min-w-full max-w-5xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
                     <h2 className="flex justify-center -mb-8 text-xl font-bold text-center ml-80 mr-80">You can check the past events and upcoming events, if you are interested in past event
                         let us know through our communication channel in about us</h2>
                     <div className="flex justify-center font-bold p-8 mt-8">
                         <h1 className="text-3xl text-center font-bold text-blue-500">Past Events</h1>
                     </div>
-                    <div class="min-h-full flex flex-row justify-center bg-gray-100">
-                        <div class="flex flex-row bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-16 border-2  w-50 max-w-md">
-                            <div id="whoobe-3fery" class="w-full md:w-64 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col mr-6">
-                                <img src={eventimage} alt="img" title="img" class="w-full h-auto object-cover rounded-t-lg" id="whoobe-ixxe5" />
-                                <div id="whoobe-1okdg" class="w-full p-4 justify-start flex flex-col">
-                                    <p class="my-4 text-center" id="whoobe-950fw">Basic understanding about
-                                        technology of robotics
-                                        in early age.</p>
-                                    <button value="button" class="my-4 px-4 py-2 text-white hover:bg-blue-700 bg-blue-500 rounded" id="whoobe-jkkr2">View</button>
-                                </div>
+                    {/* starting card */}
+                    <div class="max-w-5xl mx-auto flex space-x-6">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="https://study.com/academy/lesson/robotics-lesson-for-kids.html" target="_self" >
+                                <img src={eventimag} alt="img" class="rounded-t-lg" />
+                            </a>
+                            <div class="p-5">
+                                <a href="https://study.com/academy/lesson/robotics-lesson-for-kids.html">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
+                                <a href="https://study.com/academy/lesson/robotics-lesson-for-kids.html" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                    View
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+
                             </div>
-                            
-                            <div id="whoobe-3fery" class="w-full md:w-64 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
-                                <img src={eventimag} alt="img" title="img" class="w-full h-auto object-cover rounded-t-lg" id="whoobe-ixxe5" />
-                                <div id="whoobe-1okdg" class="w-full p-2 justify-start flex flex-col">
-                                    <p class="my-4 text-center" id="whoobe-950fw">How to connect all components within a robots</p>
-                                    <button value="button" class="my-4 px-4 py-2 text-white hover:bg-blue-700 bg-blue-500 rounded" id="whoobe-jkkr2">View</button>
-                                </div>
+                        </div>
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img src={eventimag} alt="img" class="rounded-t-lg" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
+                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                    View
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+
                             </div>
-                            <div id="whoobe-3fery" class="w-full md:w-64 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col mr-6">
-                                <img src={eventimage} alt="img" title="img" class="w-full h-auto object-cover rounded-t-lg" id="whoobe-ixxe5" />
-                                <div id="whoobe-1okdg" class="w-full p-4 justify-start flex flex-col">
-                                    <p class="my-4 text-center" id="whoobe-950fw">Basic understanding about
-                                        technology of robotics
-                                        in early age.</p>
-                                    <button value="button" class="my-4 px-4 py-2 text-white hover:bg-blue-700 bg-blue-500 rounded" id="whoobe-jkkr2">View</button>
-                                </div>
-                            </div>
-                            <div id="whoobe-3fery" class="w-full md:w-64 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col mr-6">
-                                <img src={eventimage} alt="img" title="img" class="w-full h-auto object-cover rounded-t-lg" id="whoobe-ixxe5" />
-                                <div id="whoobe-1okdg" class="w-full p-4 justify-start flex flex-col">
-                                    <p class="my-4 text-center" id="whoobe-950fw">Basic understanding about
-                                        technology of robotics
-                                        in early age.</p>
-                                    <button value="button" class="my-4 px-4 py-2 text-white hover:bg-blue-700 bg-blue-500 rounded" id="whoobe-jkkr2">View</button>
-                                </div>
-                            </div>
-                            <div id="whoobe-3fery" class="w-full md:w-64 justify-center items-center bg-white shadow-lg rounded-lg flex flex-col">
-                                <img src={eventimag} alt="img" title="img" class="w-full h-auto object-cover rounded-t-lg" id="whoobe-ixxe5" />
-                                <div id="whoobe-1okdg" class="w-full p-2 justify-start flex flex-col">
-                                    <p class="my-4 text-center" id="whoobe-950fw">How to connect all components within a robots</p>
-                                    <button value="button" class="my-4 px-4 py-2 text-white hover:bg-blue-700 bg-blue-500 rounded" id="whoobe-jkkr2">View</button>
-                                </div>
+                        </div>
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img src={eventimag} alt="img" class="rounded-t-lg" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
+                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                    View
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
+                    {/* End card */}
+
+                    {/* starting card */}
+
+                    <div class="max-w-5xl mx-auto flex space-x-6 mt-16">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img src={eventimag} alt="img" class="rounded-t-lg" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
+                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                    View
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img src={eventimag} alt="img" class="rounded-t-lg" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
+                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                    View
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img src={eventimag} alt="img" class="rounded-t-lg" />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">Robot</h5>
+                                </a>
+                                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.</p>
+                                <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+                                    View
+                                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {/* End of Cards */}
+                    
                     <div class="md:w-7/12 lg:2/3 mx-auto relative py-20 ">
                         <h1 class="text-3xl text-center font-bold text-blue-500">Upcomming Events</h1>
                         <div class="border-l-2 mt-4">
