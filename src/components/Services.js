@@ -37,7 +37,7 @@ function Services() {
                                             <h6 className="text-xl font-semibold p-4">
                                                 Coding/Programming
                                             </h6>
-                                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHByb2dyYW1taW5nJTIwZm9yJTIwYWZyaWNhbiUyMGtpZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" />                       
+                                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fHByb2dyYW1taW5nJTIwZm9yJTIwYWZyaWNhbiUyMGtpZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""/>                       
                                         </div>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ function Services() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center">
+                                <div className="lg:pt-12 pt-6 w-full md:w-2/4 px-4 text-center transform transition cursor-none hover:-translate-y-6">
                                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                         <div className="px-4 py-2 flex-auto">
                                             <div className="text-white p-2 text-center inline-flex items-center justify-center w-12 h-12 mb-2 shadow-lg rounded-full bg-blue-400">
