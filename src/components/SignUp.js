@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
-import Robot from '../assets/Roboo.png'
 import {Link, useNavigate} from 'react-router-dom'
 import axios from 'axios'
 

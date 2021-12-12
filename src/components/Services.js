@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
-import Robot from '../assets/robot.png'
 import learner from '../assets/leaner.png'
 
 function Services() {

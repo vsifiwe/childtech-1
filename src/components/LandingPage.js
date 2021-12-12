@@ -34,9 +34,9 @@ function LandingPage() {
                                 <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
-                        <div className="relative">
-                            <img src={show} alt="home" className=' -ml-80 flex w-full -mt-8 min-h-full'/>
-                            <img src={learney} alt="pict" className='absolute -mt-96' />
+                        <div className="relative top-0 w-screen -mr-6 -mt-2 h-screen bg-landp">
+                            {/* <img src={show} alt="home" className=' -ml-60 -mt-8 min-h-full'/> */}
+                           <span className='w-1/2 absolute' ><img src={learney} alt="pict" className='mt-20' /> </span>
                         </div>
 
                     </div>
