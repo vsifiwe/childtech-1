@@ -16,9 +16,10 @@ function Events() {
                     <div className="flex justify-center font-bold p-8 mt-8">
                         <h1 className="text-3xl text-center font-bold text-blue-500">Past Events</h1>
                     </div>
+
                     {/* starting card */}
                     <div class="max-w-5xl mx-auto flex space-x-6">
-                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:-translate-x-6">
                             <a href="https://study.com/academy/lesson/robotics-lesson-for-kids.html" target="_self" >
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </a>
@@ -34,7 +35,7 @@ function Events() {
 
                             </div>
                         </div>
-                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:-translate-y-6">
                             <a href="#">
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </a>
@@ -50,7 +51,7 @@ function Events() {
 
                             </div>
                         </div>
-                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:translate-x-6">
                             <a href="#">
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </a>
@@ -71,7 +72,7 @@ function Events() {
                     {/* starting card */}
 
                     <div class="max-w-5xl mx-auto flex space-x-6 mt-16">
-                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:-translate-x-6">
                             <a href="#">
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </a>
@@ -86,7 +87,7 @@ function Events() {
                                 </a>
                             </div>
                         </div>
-                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:-translate-y-6">
                             <a href="#">
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </a>
@@ -102,7 +103,7 @@ function Events() {
 
                             </div>
                         </div>
-                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+                        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 transform transition cursor-pointer hover:translate-x-6">
                             <a href="#">
                                 <img src={eventimag} alt="img" class="rounded-t-lg" />
                             </a>
@@ -133,10 +134,10 @@ function Events() {
 
                                 {/* <!-- Content that showing in the box --> */}
                                 <div class="flex-auto">
-                                    <h1 class="text-lg">Event 1</h1>
-                                    <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-                                    <h3>Leapr Lab Rugando</h3>
-                                    <h3>10 December 2021</h3>
+                                    <h1 class="text-lg p-2">Event 1</h1>
+                                    <h1 class="text-xl font-bold p-2">Orientation and Briefing on Uniliver basics</h1>
+                                    <h3 className='p-2'>Leapr Lab Rugando</h3>
+                                    <h3 className='p-2'>10 December 2021</h3>
                                 </div>
                                 <Link to="/booking" class="text-center ring-white p-2 rounded ring-2 text-white hover:text-gray-300">Book for Event</Link>
                             </div>
@@ -151,10 +152,10 @@ function Events() {
 
                                 {/* <!-- Content that showing in the box --> */}
                                 <div class="flex-auto">
-                                    <h1 class="text-lg">Event 2</h1>
-                                    <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-                                    <h3>Creativity Lab kimihurura</h3>
-                                    <h3>14 December 2021</h3>
+                                    <h1 class="text-lg p-2">Event 2</h1>
+                                    <h1 class="text-xl font-bold p-2">Orientation and Briefing on Uniliver basics</h1>
+                                    <h3 className='p-2'>Creativity Lab kimihurura</h3>
+                                    <h3 className='p-2'>14 December 2021</h3>
                                 </div>
                                 <Link to="/booking" class="text-center ring-white p-2 rounded ring-2 text-white hover:text-gray-300">Book for Event</Link>
                             </div>
@@ -169,10 +170,10 @@ function Events() {
 
                                 {/* <!-- Content that showing in the box --> */}
                                 <div class="flex-auto">
-                                    <h1 class="text-lg">Event 3</h1>
-                                    <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-                                    <h3>FAB Lab kacyiru</h3>
-                                    <h3>17 December 2021</h3>
+                                    <h1 class="text-lg p-2">Event 3</h1>
+                                    <h1 class="text-xl font-bold p-2">Orientation and Briefing on Uniliver basics</h1>
+                                    <h3 className='p-2'>FAB Lab kacyiru</h3>
+                                    <h3 className='p-2'>17 December 2021</h3>
                                 </div>
                                 <Link to="/booking" class="text-center ring-white p-2 rounded ring-2 text-white hover:text-gray-300">Book for Event</Link>
                             </div>
@@ -187,10 +188,10 @@ function Events() {
 
                                 {/* <!-- Content that showing in the box --> */}
                                 <div class="flex-auto">
-                                    <h1 class="text-lg">Event 4</h1>
-                                    <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-                                    <h3>KLAB kacyiru</h3>
-                                    <h3>22 December 2021</h3>
+                                    <h1 class="text-lg p-2">Event 4</h1>
+                                    <h1 class="text-xl font-bold p-2">Orientation and Briefing on Uniliver basics</h1>
+                                    <h3 className='p-2'>KLAB kacyiru</h3>
+                                    <h3 className='p-2'>22 December 2021</h3>
                                 </div>
                                 <Link to="/booking" class="text-center ring-white p-2 rounded ring-2 text-white hover:text-gray-300">Book for Event</Link>
                             </div>
@@ -205,10 +206,10 @@ function Events() {
 
                                 {/* <!-- Content that showing in the box --> */}
                                 <div class="flex-auto">
-                                    <h1 class="text-lg">Event 5</h1>
-                                    <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-                                    <h3>Online</h3>
-                                    <h3>25 January 2022</h3>
+                                    <h1 class="text-lg p-2">Event 5</h1>
+                                    <h1 class="text-xl font-bold p-2">Orientation and Briefing on Uniliver basics</h1>
+                                    <h3 className='p-2'>Online</h3>
+                                    <h3 className='p-2'>25 January 2022</h3>
                                 </div>
                                 <Link to="/booking" class="text-center ring-white p-2 rounded ring-2 text-white hover:text-gray-300">Book for Event</Link>
                             </div>

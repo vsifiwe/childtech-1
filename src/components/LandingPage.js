@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
-import show from '../assets/homeY.png'
+import show from '../assets/homep.png'
 import learn from '../assets/africa.png'
 import robo from '../assets/robo.png'
+import learney from '../assets/LearnerY.png'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 
@@ -33,9 +34,11 @@ function LandingPage() {
                                 <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
-                        <div className="flex -mr-6 -mt-8 -mb-20">
-                            <img src={show} alt="home" />
+                        <div className="relative">
+                            <img src={show} alt="home" className=' -ml-80 flex w-full -mt-8 min-h-full'/>
+                            <img src={learney} alt="pict" className='absolute -mt-96' />
                         </div>
+
                     </div>
 
                     <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -89,7 +92,7 @@ function LandingPage() {
                                                 <i className="fas fa-retweet"></i>
                                             </div>
                                             <h6 className="text-xl font-bold">
-                                                 Weekend program
+                                                Weekend program
                                             </h6>
                                             <p className="mt-2 mb-4 text-gray-900">
                                                 Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
@@ -104,7 +107,7 @@ function LandingPage() {
                                                 <i className="fas fa-retweet"></i>
                                             </div>
                                             <h6 className="text-xl font-bold">
-                                                 Online program
+                                                Online program
                                             </h6>
                                             <p className="mt-2 mb-4 text-gray-900">
                                                 Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
@@ -120,7 +123,7 @@ function LandingPage() {
                                                 <i className="fas fa-fingerprint"></i>
                                             </div>
                                             <h6 className="text-xl font-bold">
-                                            Holiday program
+                                                Holiday program
                                             </h6>
                                             <p className="mt-2 mb-4 text-gray-900">
                                                 Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!
@@ -144,9 +147,9 @@ function LandingPage() {
                                         and that is going to change the education system to a better one.
                                     </p>
                                     <p className="text-lg leading-relaxed mt-0 mb-4 text-gray-900">
-                                    ChildTech will be having several courses including the coding part, 
-                                    the practical science part and the engineering part, through different 
-                                    programs: school program, afterschool program, weekend program and holiday program.
+                                        ChildTech will be having several courses including the coding part,
+                                        the practical science part and the engineering part, through different
+                                        programs: school program, afterschool program, weekend program and holiday program.
                                     </p>
                                 </div>
 
@@ -155,7 +158,7 @@ function LandingPage() {
                                         <img
                                             alt="..."
                                             src={learn}
-                                            className="w-full align-middle rounded-t-lg"/>                                     
+                                            className="w-full align-middle rounded-t-lg" />
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +191,7 @@ function LandingPage() {
                                 <div className="w-full md:w-4/12 ml-auto mr-auto px-4  -mr-48">
                                     <img
                                         alt="..."
-                                        className="max-w-full rounded-lg h-full"                                 
+                                        className="max-w-full rounded-lg h-full"
                                         src={robo} />
                                 </div>
                                 <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -200,8 +203,8 @@ function LandingPage() {
                                             ChildTech main actions
                                         </h3>
                                         <p className="mt-4 text-lg leading-relaxed text-gray-900 text-lg">
-                                        In school children will first be taught how to code in their schools. 
-                                        And create their own interactive stories, animations and games.
+                                            In school children will first be taught how to code in their schools.
+                                            And create their own interactive stories, animations and games.
                                         </p>
                                         <ul className="list-none mt-6">
                                             <li className="py-2">
