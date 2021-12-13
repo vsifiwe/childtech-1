@@ -58,10 +58,9 @@ function Booking() {
                                             <Form.Group as={Col} controlId="formGridState">
                                                 <Form.Label>Choose Course</Form.Label>
                                                 <Form.Select defaultValue="Choose...">                                                   
-                                                    <option>Coding</option>
-                                                    <option>Science</option>
+                                                    <option>Coding</option>                                                    
                                                     <option>Engineering/Robotics</option>
-                                                    <option>Practical physics</option>
+                                                    <option>Practical science</option>
                                                 </Form.Select>
                                             </Form.Group>
 
@@ -122,7 +121,7 @@ function Booking() {
                                                 <Form.Control type="number" />
                                             </Form.Group>
                                             <Form.Group as={Col} controlId="formGridPhone">
-                                                <Form.Label>Number of childdren</Form.Label>
+                                                <Form.Label>Number of children</Form.Label>
                                                 <Form.Control type="number" />
                                             </Form.Group>
                                         </Row>
@@ -130,10 +129,9 @@ function Booking() {
                                         <Form.Group as={Col} controlId="formGridState">
                                                 <Form.Label>Choose Course</Form.Label>
                                                 <Form.Select defaultValue="Choose...">                                                   
-                                                    <option>Coding</option>
-                                                    <option>Science</option>
+                                                    <option>Coding</option>                                                    
                                                     <option>Engineering/Robotics</option>
-                                                    <option>Practical physics</option>
+                                                    <option>Practical science</option>
                                                 </Form.Select>
                                             </Form.Group>
 

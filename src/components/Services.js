@@ -65,7 +65,7 @@ function Services() {
 
 
                     <div class="min-h-screen flex flex-row items-center justify-center bg-gray-100 transform transition cursor-none hover:-translate-y-6">                    
-                        <div class="bg-blue-400 w-full shadow rounded p-8 sm:p-12 max-w-5xl mx-auto mb-8">
+                        <div class="bg-blue-400 w-full shadow rounded sm:p-12 max-w-5xl mx-auto mb-8 -mt-16 ">
                             <h1 className='text-center text-white text-2xl font-semibold'>Our different programs is devided into 4 categories.
                             </h1>
                             <ul class="py-12 space-x-20 w-2/3 flex">
