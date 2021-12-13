@@ -21,7 +21,7 @@ function Header() {
                     <div className="lg:flex flex-grow items-center" id="example-navbar-warning">
                         <ul className="flex flex-col lg:flex-row list-none ml-auto px-8">
                             <li className="nav-item">
-                                <Link to='/' className="py-2 flex items-center  text-lg leading-snug text-blue-600 hover:opacity-75">
+                                <Link to='/' className=" px-4 py-2 flex items-center  text-lg leading-snug text-blue-600 hover:opacity-75">
                                     Home
                                 </Link>
                             </li>
@@ -31,19 +31,19 @@ function Header() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/services' className="flex -ml-2 items-center text-lg leading-snug text-white hover:opacity-80">
-                                    <NavDropdown title="Services" id="navbarScrollingDropdown">
+                                <Link to='/services' className="px-4 py-2 flex items-center  text-lg leading-snug text-blue-600 hover:opacity-75">Services
+                                    {/* <NavDropdown title="Services" id="navbarScrollingDropdown">
                                         <NavDropdown.Item><Link to="/services">Programs </Link></NavDropdown.Item>
                                         <NavDropdown.Item><Link to='/services'>Actions </Link></NavDropdown.Item>
-                                    </NavDropdown>
+                                    </NavDropdown> */}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/events' className="flex items-center text-lg leading-snug text-white hover:opacity-80">
-                                    <NavDropdown title="Events" id="navbarScrollingDropdown">
+                                <Link to='/events' className="px-4 py-2 flex items-center  text-lg leading-snug text-blue-600 hover:opacity-75">Events
+                                    {/* <NavDropdown title="Events" id="navbarScrollingDropdown">
                                         <NavDropdown.Item> <Link to='/events'>  Past_Events </Link> </NavDropdown.Item>
                                         <NavDropdown.Item> <Link to='/events'> Upcoming_Events </Link> </NavDropdown.Item>
-                                    </NavDropdown>
+                                    </NavDropdown> */}
                                 </Link>
                             </li>
                             

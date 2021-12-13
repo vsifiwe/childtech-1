@@ -31,13 +31,13 @@ function Booking() {
                                     <Form className="mr-6">
                                         <Row className="mb-3">
                                             <Form.Group as={Col} controlId="formGridEmail">
-                                                <Form.Label>Parent First Name</Form.Label>
+                                                <Form.Label>Parent Names</Form.Label>
                                                 <Form.Control type="text" />
                                             </Form.Group>
 
                                             <Form.Group as={Col} controlId="formGridName">
-                                                <Form.Label>Parent Last Name</Form.Label>
-                                                <Form.Control type="text" />
+                                                <Form.Label>Parent ID</Form.Label>
+                                                <Form.Control type="number" />
                                             </Form.Group>
                                         </Row>
                                         <Row className="mb-3">                                        

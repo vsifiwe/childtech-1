@@ -16,17 +16,17 @@ function LandingPage() {
                     <div className="flex flex-row sm:flex-col md:flex-col">
                         <div className="flex flex-col text-black space-y-24 w-9/12">
                             <span className="text-4xl ml-8 font-bold mt-16">Our Children, Our future</span>
-                            <p className="flex text-xl ml-8 leading-relaxed py-4">
-                                Ever thought of improving your children’s eductaion?
-                                childTech teaches your child to love technology,
+                            <p className="flex text-2xl ml-8 leading-relaxed py-4">
+                                Ever thought of improving your children’s education?
+                                ChildTech teaches your child to love technology,
                                 improve creativity, logical thinking and problem solving
                                 all at a young age.
                             </p>
-                            <p className="text-xl ml-8 leading-relaxed mt-0">
+                            {/* <p className="text-xl ml-8 leading-relaxed mt-0">
                                 This program will be having children from 7 years to 14 years, through ChildTech,
                                 children will be able to improve their computation skills, problem solving skills,
                                 sharpen their minds and increase their level of observation thus being creative.
-                            </p>
+                            </p> */}
 
                             <div className="flex space-x-12 ml-48 pb-32">
                                 <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg mr-16 p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
@@ -51,7 +51,7 @@ function LandingPage() {
                                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                                     <div className="pr-12">
                                         <h1 className="text-white text-3xl">
-                                            ChildTech is a STEM program that is going to teach children about technology.
+                                            ChildTech is a company that is going to teach children about technology.
                                         </h1>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@ function LandingPage() {
                                             </div>
                                             <h6 className="text-xl font-bold">School program</h6>
                                             <p className="mt-2 mb-4 text-gray-900">
-                                                Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.
+                                                In this program we are going to teach children from their schools where they will be dealing with practical courses.
                                             </p>
                                         </div>
                                     </div>
@@ -93,7 +93,7 @@ function LandingPage() {
                                                 Weekend program
                                             </h6>
                                             <p className="mt-2 mb-4 text-gray-900">
-                                                Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
+                                                We shall be teaching children during weekend to allow them to play while learning to be creative in what they do.
                                             </p>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@ function LandingPage() {
                                                 Online program
                                             </h6>
                                             <p className="mt-2 mb-4 text-gray-900">
-                                                Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
+                                                This program is going to help parents and children to learn from their homes or anywhere convenient.
                                             </p>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@ function LandingPage() {
                                                 Holiday program
                                             </h6>
                                             <p className="mt-2 mb-4 text-gray-900">
-                                                Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!
+                                                Children will join holiday intake to learn about tech, share teamwork with different children and create their own works.
                                             </p>
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@ function LandingPage() {
                                                         </span>
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-gray-900 text-lg">Practical physics</h4>
+                                                        <h4 className="text-gray-900 text-lg">Practical science</h4>
                                                     </div>
                                                 </div>
                                             </li>

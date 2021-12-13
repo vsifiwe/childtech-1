@@ -11,9 +11,8 @@ function Events() {
             <Header />
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-5xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
-                    <h2 className="flex justify-center -mb-8 text-xl font-bold text-center ml-80 mr-80">You can check the past events and upcoming events, if you are interested in past event
-                        let us know through our communication channel in about us</h2>
-                    <div className="flex justify-center font-bold p-8 mt-8">
+                    
+                    <div className="flex justify-center font-bold p-8">
                         <h1 className="text-3xl text-center font-bold text-blue-500">Past Events</h1>
                     </div>
 
