@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
-import show from '../assets/homep.png'
 import learn from '../assets/africa.png'
 import robo from '../assets/robo.png'
 import learney from '../assets/LearnerY.png'
@@ -15,7 +14,7 @@ function LandingPage() {
             <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-4xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
                     <div className="flex flex-row sm:flex-col md:flex-col">
-                        <div className="flex flex-col text-black space-y-24">
+                        <div className="flex flex-col text-black space-y-24 w-9/12">
                             <span className="text-4xl ml-8 font-bold mt-16">Our Children, Our future</span>
                             <p className="flex text-xl ml-8 leading-relaxed py-4">
                                 Ever thought of improving your children’s eductaion?
@@ -34,9 +33,8 @@ function LandingPage() {
                                 <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
-                        <div className="relative top-0 w-full -mr-6 -mt-2 h-screen bg-landp -ml-48">
-                            {/* <img src={show} alt="home" className=' -ml-60 -mt-8 min-h-full'/> */}
-                           <span className='w-full absolute -mr-16 ' ><img src={learney} alt="pict" className='mt-20 ' /> </span>
+                        <div className="relative top-0 w-full -mr-6 -mt-2 h-screen bg-landp -ml-48">                        
+                           <span className='w-4/6 absolute right-0 ' ><img src={learney} alt="pict" className='mt-20 ' /> </span>
                         </div>
 
                     </div>
