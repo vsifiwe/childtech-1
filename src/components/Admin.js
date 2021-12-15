@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 
 
 function Admin() {
+
+    const [data, setData] = useState({
+		courses: 0,
+		enrolls: 0,
+		appointments: 0,
+	});
+
+	useEffect(() => {
+		axios.get("https://childtech.herokuapp.com/api/data/").then((response) => {
+			console.log(response.data);
+			setData(response.data);
+		});
+
+		// empty dependency array means this effect will only run once (like componentDidMount in classes)
+	}, []);
+
     return (
         <div>
             <Header />
@@ -29,7 +45,7 @@ function Admin() {
                                             Courses</Link>
                                     </li>
                                     <li>
-                                        <Link to="/" class="flex items-center text-sm font-semibold text-gray-500 hover:text-blue-500 transition duration-200">
+                                        <Link to="/appointments" class="flex items-center text-sm font-semibold text-gray-500 hover:text-blue-500 transition duration-200">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-blue-500 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                                             </svg>
@@ -80,7 +96,7 @@ function Admin() {
                                     <div class="flex items-center justify-around p-6 bg-white w-64 rounded-xl space-x-2 mt-10 shadow-lg">
                                         <div>
                                             <span class="text-lg font-semibold text-gray-900">Uploaded Courses</span>
-                                            <h1 class="text-2xl font-bold">20</h1>
+                                            <h1 class="text-2xl font-bold">{data.courses}</h1>
                                         </div>
                                         <div>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -91,7 +107,7 @@ function Admin() {
                                     <div class="flex items-center justify-around p-6 bg-white w-64 rounded-xl space-x-2 mt-10 shadow-lg">
                                         <div>
                                             <span class="text-lg font-semibold text-gray-900">Paid Courses</span>
-                                            <h1 class="text-2xl font-bold">15</h1>
+                                            <h1 class="text-2xl font-bold">{data.enrolls}</h1>
                                         </div>
                                         <div>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -113,7 +129,7 @@ function Admin() {
                                     <div class="flex items-center justify-around p-6 bg-white w-64 rounded-xl space-x-2 mt-10 shadow-lg">
                                         <div>
                                             <span class="text-md font-semibold text-gray-900">Appointments</span>
-                                            <h1 class="text-2xl font-bold">5</h1>
+                                            <h1 class="text-2xl font-bold">{data.appointments}</h1>
                                         </div>
                                         <div>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

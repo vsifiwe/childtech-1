@@ -3,28 +3,49 @@ import { img } from 'react-bootstrap'
 import Footer from './layout/Footer'
 import Header from './layout/Header'
 import axios from 'axios'
+import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
 const token = window.localStorage.getItem("token")
 
-const config = {
-    token
-}
 
 function CoursePage() {
 
-    const [courses, setCourses] = useState([])
-    const [isLoading,setIsloading] = useState(true);
+    const [courses, setCourses] = useState([]);
+	const [isLoading, setIsloading] = useState(true);
 
-    useEffect(() => {
-        console.log("starting")
-        axios.get('http://childtech.herokuapp.com/api/courses/', config)
-        .then(response =>{ 
-            console.log(response.data)
-            setIsloading(false)
-            setCourses(response.data)})
-    
-    // empty dependency array means this effect will only run once (like componentDidMount in classes)
-    }, []);
+	const config = {
+		public_key: "FLWPUBK_TEST-43c5c0e6828d1d0452e44df1cb470658-X",
+		tx_ref: Date.now(),
+		amount: 100,
+		currency: "RWF",
+		payment_options: "card,mobilemoney,ussd",
+		customer: {
+			email: "asifiwemanzi@gmail.com",
+			phonenumber: "0788427257",
+			name: "Manzi Asifiwe",
+		},
+		customizations: {
+			title: "ChildTech",
+			description: "Buy course",
+			logo: "https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg",
+		},
+	};
+
+	const handleFlutterPayment = useFlutterwave(config);
+
+	useEffect(() => {
+		console.log(token);
+		axios
+			.get("https://childtech.herokuapp.com/api/courses/")
+			.then((response) => {
+				console.log(response.data);
+				setIsloading(false);
+				setCourses(response.data);
+			});
+
+		// empty dependency array means this effect will only run once (like componentDidMount in classes)
+	}, []);
+
     return (
         <div>
             <Header />
@@ -58,7 +79,16 @@ function CoursePage() {
                                         <small>RWF </small>
                                         <b>{course.price}</b>
                                     </h3>
-                                    <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l">Buy now</button>
+                                    <button value="button" class="bg-blue-400 text-base text-white px-4 py-2 rounded hover:bg-blue-700 mt-8" id="whoobe-t9t5l" onClick={() => {
+													handleFlutterPayment({
+														callback: (response) => {
+															console.log(response);
+															closePaymentModal(); // this will close the modal programmatically
+														},
+														onClose: () => {},
+													});
+												}}
+                                                >Buy now</button>
                                 </div>
                             </div>)
                                 })
