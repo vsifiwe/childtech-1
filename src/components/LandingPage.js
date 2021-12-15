@@ -25,7 +25,7 @@ function LandingPage() {
                 <div className="p-4 min-w-full max-w-4xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
                     <div className="flex flex-row sm:flex-col md:flex-col">
                         <div className="flex flex-col text-black space-y-24 w-9/12">
-                            <span className="text-4xl ml-8 font-bold mt-16">Our Children, Our future</span>
+                            <span className="text-xl  md:text-2xl lg:text-4xl ml-8 mr-28 md:mr-4 lg:mr-auto font-bold mt-16 ">Our Children, Our future</span>
                             <p className="flex text-md md:text-xl lg:text-2xl ml-8 leading-relaxed py-4">
                                 Ever thought of improving your children’s education?
                                 ChildTech teaches your child to love technology,
