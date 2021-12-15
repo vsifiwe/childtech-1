@@ -6,37 +6,40 @@ import robo from '../assets/robo.png'
 import learney from '../assets/LearnerY.png'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
+import './style.css'
+import { useState, useEffect } from 'react';
+
 
 function LandingPage() {
-    return (
+    const [spinner, setSpinner] = useState(true);
+
+    // It will be executed before rendering
+
+    useEffect(() => {
+        setTimeout(() => setSpinner(false), 1000)
+    }, []);
+    return !spinner && (
         <div >
             <Header />
-            <div className="flex w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
+            <div className="flex flex-col md:flex-col lg:flex-row w-full min-h-full justify-center items-center" style={{ backgroundColor: '#F5F4F9' }}>
                 <div className="p-4 min-w-full max-w-4xl mt-16" style={{ backgroundColor: '#F5F4F9' }}>
                     <div className="flex flex-row sm:flex-col md:flex-col">
                         <div className="flex flex-col text-black space-y-24 w-9/12">
                             <span className="text-4xl ml-8 font-bold mt-16">Our Children, Our future</span>
-                            <p className="flex text-2xl ml-8 leading-relaxed py-4">
+                            <p className="flex text-md md:text-xl lg:text-2xl ml-8 leading-relaxed py-4">
                                 Ever thought of improving your children’s education?
                                 ChildTech teaches your child to love technology,
                                 improve creativity, logical thinking and problem solving
                                 all at a young age.
                             </p>
-                            {/* <p className="text-xl ml-8 leading-relaxed mt-0">
-                                This program will be having children from 7 years to 14 years, through ChildTech,
-                                children will be able to improve their computation skills, problem solving skills,
-                                sharpen their minds and increase their level of observation thus being creative.
-                            </p> */}
-
                             <div className="flex space-x-12 ml-48 pb-32">
                                 <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg mr-16 p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
                                 <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
-                        <div className="relative top-0 w-full -mr-6 -mt-2 h-screen bg-landp -ml-48">                        
-                           <span className='w-4/6 absolute right-0 ' ><img src={learney} alt="pict" className='mt-20 ' /> </span>
+                        <div className="relative top-0 w-full -mr-6 -mt-2 h-screen bg-landp -ml-48">
+                            <span className='w-4/6 absolute right-0'><img src={learney} alt="pict" className='mt-20'/> </span>
                         </div>
-
                     </div>
 
                     <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -252,6 +255,7 @@ function LandingPage() {
 
                 </div>
             </div>
+            {/* <div class="lds-facebook"><div></div><div></div><div></div></div> */}
             <Footer />
         </div>
 
