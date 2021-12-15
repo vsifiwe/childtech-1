@@ -52,9 +52,9 @@ export default function SignUp() {
         axios.post('https://childtech.herokuapp.com/api/register',data)
         .then(response => {
             console.log(response)
-            if(response.status == 200) {
+            if(response.status === 200) {
                 navigate("/login")
-            } else if(response.status == 400){
+            } else if(response.status === 400){
                 console.log("This user already exists")
             }
         })

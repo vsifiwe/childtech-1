@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react'
-import axios from 'axios';
 import { Routes, Route } from "react-router-dom";
 import  LandingPage  from './components/LandingPage';
 import  Services  from './components/Services';
