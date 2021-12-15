@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
-import axios from 'axios'
+import jwt_decode from 'jwt_decode'
 import { Link, useNavigate } from 'react-router-dom'
 
 
