@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Header from './layout/Header'
 import Footer from './layout/Footer'
+import axios from 'axios'
 
 
 function About() {
