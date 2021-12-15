@@ -32,8 +32,8 @@ function LandingPage() {
                                 improve creativity, logical thinking and problem solving
                                 all at a young age.
                             </p>
-                            <div className="flex space-x-12 ml-48 pb-32">
-                                <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg mr-16 p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
+                            <div className="flex space-x-12 pb-32 justify-center">
+                                <span><Button className=" text-xl bg-white text-blue-700 hover:bg-blue-400 rounded-lg p-3 ring-2 ring-blue-300 md:ring-blue-500"> <Link to='/coursepage'> Start now </Link> </Button> </span>
                                 <span className="animate-pulse inline-flex"><Button className="text-xl rounded-lg p-3 leading-tight hover:text-white "><Link to='/booking'>  Book an appointment </Link>  </Button></span>
                             </div>
                         </div>
@@ -41,7 +41,7 @@ function LandingPage() {
                             <span className='w-4/6 absolute right-0'><img src={learney} alt="pict" className='mt-20'/> </span>
                         </div>
                     </div>
-
+                {/*starting  2nd section */}
                     <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
                         style={{
                             minHeight: "75vh"
